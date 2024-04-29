@@ -1,0 +1,1211 @@
+/* Customize scrollbar styles */
+
+select {
+    /* Remove the arrow in most modern browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+
+    /* Add some custom styling, e.g., background and border styles */
+    background-color: wheat;
+    border: 1px solid #060606;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+    /* Adjust as needed */
+}
+
+/* For Webkit browsers (e.g., Chrome) */
+body::-webkit-scrollbar {
+    width: 0px;
+    /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Make the thumb transparent */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Make the track transparent */
+}
+
+/*Navbar css*/
+.Navbar_Outer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.Navbar_Inner {
+    width: 95%;
+    position: fixed;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    flex-direction: row;
+    z-index: 2;
+
+}
+
+.Navbar_Outer2 {
+    width: 100%;
+    z-index: 3;
+    margin-top: 70px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #D6B610;
+}
+
+.Navbar_Inner2 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 8px;
+    flex-direction: row;
+    z-index: 2;
+
+}
+
+
+.Nav_search_outer {
+    width: 300px;
+    border-radius: 13px;
+    margin-left: 10px;
+    border: 0px;
+    font-size: 12px;
+    font-weight: 550;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav_Buttons {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #edf0f7;
+    width: 60px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.Nav_Buttons_activate {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: blue;
+    width: 60px;
+    height: 26px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.blue_button {
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px dotted blue;
+    border-radius: 15px;
+    width: 80px;
+    background-color: white;
+    color: blue;
+    font-size: 11px;
+    font-weight: 500
+}
+
+.pages {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf0f7;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pageLinks {
+    text-decoration: none;
+    color: black;
+}
+
+.Button_disabled {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f9091;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Body css*/
+.Body_Outer {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 684px;
+    overflow: scroll;
+    z-index: 2;
+}
+
+.Body_Outer::-webkit-scrollbar {
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+    /* Make the scrollbar background transparent */
+    display: none;
+    scroll-behavior: smooth;
+}
+
+
+.Body_Inner {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.blue_ShowMore_button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    border-radius: 15px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: blue;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+/*Card css*/
+.ImageComponent {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width : 400px) {
+    .ImageComponent {
+        height: 300px;
+    }
+}
+
+.year_button {
+    border: 1px #000;
+    padding: 2px;
+    width: 53px;
+    border-radius: 20px;
+    font-size: 10px;
+    display: flex;
+    color: blue;
+    height: 25px;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    left: 12px;
+    top: 20px;
+    justify-content: center;
+    font-weight: 500
+}
+
+.fav_button {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* card Bottom Compo */
+
+
+
+.cardDetails {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    
+}
+
+@media screen and (max-width :  400px) {
+    .cardDetails {
+        height: 40px;
+    }
+}
+
+@media screen and (min-width : 1152px){
+    .checkoutform{
+        width : 800px;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width : 1152px){
+    .CustomInputTextField{
+        width : 395px;
+    }
+}
+@media screen and (max-width : 440px){
+    .CustomInputTextField{
+        width : 48%;
+    }
+}
+
+.detailsItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.colu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.Card_Bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: purple;
+}
+
+.side_Navbar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    /* font-family: 'Fugaz One', sans-serif; */
+    color: #8f9091;
+
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+
+/* @media screen and (min-width: 910px) {
+    .side_Navbar{
+        display: none;
+    }
+    
+} */
+
+
+
+.side_Navbar::-webkit-scrollbar {
+    width: 0.1rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+    /* Make the scrollbar background transparent */
+}
+
+.side_Navbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Make the scrollbar thumb (handle) transparent */
+}
+
+
+.mobile-buttons:hover {
+    cursor: pointer;
+}
+
+
+.whole_container {
+    height: 632px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBarOptions {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sideBarOptions:hover {
+    cursor: pointer;
+    color: #601C24;
+    font-weight: bold;
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.productDetailsCompo {
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: wheat; */
+    height: 700px;
+    width: 45%;
+    overflow: scroll;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.productDetailsCompo::-webkit-scrollbar {
+    width: 0.4rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+}
+
+.productDetailsCompo::-webkit-scrollbar-thumb {
+    background-color: grey;
+
+}
+
+@media screen and (max-width: 970px) {
+    .productDetailsCompo {
+        width: 95%;
+    }
+
+    ;
+}
+
+@media screen and (max-width: 601px) {
+    .productDetailsCompo {
+        width: 95%;
+        height: fit-content;
+    }
+
+    ;
+
+}
+
+@media screen and (max-width: 420px) {
+    .productDetailsCompo {
+        width: 95%;
+        height: fit-content;
+    }
+
+    ;
+
+}
+
+.filters {
+    font-size: xx-large;
+}
+
+
+
+
+.ProductDetailsPage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 601px) {
+
+    /* Hide the buttons */
+    .ProductDetailsPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ;
+
+}
+
+
+.ProductImagesContainer {
+    display: flex;
+    width: 600px;
+    height: 750px;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 970px) {
+
+    /* Hide the buttons */
+    .ProductImagesContainer {
+        width: 95%;
+    }
+
+    ;
+}
+
+@media screen and (max-width: 601px) {
+
+    /* Hide the buttons */
+    .ProductImagesContainer {
+        flex-direction: column;
+        height: 550px;
+    }
+
+    ;
+
+}
+
+
+/* For larger screens */
+@media screen and (min-width: 600px) {
+
+    /* Hide the buttons */
+    .mobile-buttons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 601px) {
+
+    /* Hide the buttons */
+    .Body_Outer {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    ;
+
+}
+
+.allimageViewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    width: 110px;
+    overflow: scroll;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.allimageViewer::-webkit-scrollbar {
+    width: 0.2rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+}
+
+.allimageViewer::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 601px) {
+    .allimageViewer {
+        flex-direction: row;
+        width: 80%;
+        height: 200px;
+    }
+
+    ;
+
+}
+
+.displayImage {
+    height: 670px;
+    width: 570px;
+}
+
+@media screen and (max-width: 601px) {
+    .displayImage {
+        height: 400px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .displayImage {
+        height: 400px;
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 601px) {
+
+    /* Hide the buttons */
+    .fileuploaded {
+        font-size: 12px;
+    }
+
+}
+
+.submitButton {
+    margin-top: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton:hover {
+    background-color: wheat;
+}
+
+.allReviews {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer_outer {
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    margin-top: 55px;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100%;
+    border-top: 1px solid black;
+     z-index: 10;
+}
+
+@media screen and (max-width : 900px) {
+    .footer_inner {
+        flex-direction: column;
+    }
+}
+
+.footer_link {
+    text-decoration: none;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif ;
+    font-style: italic;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer_Links_Outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid grey;
+}
+
+@media screen and (max-width : 900px) {
+    .footer_Links_Outer {
+        border-left: 0px;
+        border-top: 1px solid grey;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .footer_link {
+        font-size: 10px;
+    }
+}
+
+.footericons {
+    font-size: 30px;
+}
+
+.cartComponentContainer {
+    padding: 10px;
+    margin-bottom: 250px;
+}
+
+
+.cartComponentContainer2 {
+    padding: 10px;
+    overflow: scroll;
+}
+
+.cartComponentContainer::-webkit-scrollbar {
+    width: 0.2rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+}
+
+.cartComponentContainer::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.cartComponentContainer2::-webkit-scrollbar {
+    width: 0.2rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+}
+
+.cartComponentContainer2::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.cartproducts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    margin-top: 45px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cartProductDetails {
+    width: 60%;
+    height: 100%;
+}
+
+.selectBox {
+    border: 0;
+    font-size: small;
+    margin: 5px;
+    width: 40px;
+}
+
+.options {
+    font-size: small;
+}
+
+.addtocartBtn{
+    width: 45%;
+    border-radius: 10px;
+    height: 35px;
+    color: white;
+    background-color: #5E17EB;
+    border: 1px solid grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.removeBtn {
+    width: 50%;
+    height: 25px;
+    background-color: #F5F5F5;
+    border: 1px solid grey;
+    font-size: 12px;
+}
+
+.tabBtn:hover {
+    cursor: pointer;
+}
+
+.back {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #E8E8E8;
+}
+
+.bgColor {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(53, 2, 108, 0.7);
+
+}
+
+.logincompo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btnContainer {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer2 {
+    width: 100%;
+    display: none;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    justify-content: center;
+}
+
+@media screen and (max-width : 910px) {
+    .btnContainer2 {
+        display: flex;
+    }
+}
+
+.loginBtn {
+    width: 50%;
+    height: 100%;
+    background: wheat;
+    color: black;
+}
+
+.loginBtn2 {
+    width: 50%;
+    height: 100%;
+    background-color: #D32F2F;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+.loginBtn {
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+
+.fieldsContainer {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fieldsContainer2 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mailBtn {
+    width: 97%;
+    height: 30px;
+    margin: 5px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.mailBtn:hover {
+    background-color: white;
+}
+
+/* Your CSS file */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider hr {
+    display: flex;
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0 10px;
+}
+
+.ProductCard {
+    width: 350px;
+    height: 500px;
+    background-color:#E5E4E2;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+
+}
+
+@media screen and (max-width : 400px) {
+    .ProductCard {
+        width: 300px;
+        height: 420px;
+        font-size: 10px;
+    }
+}
+
+
+
+.categoriesWindow {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 115px;
+    justify-content: center;
+}
+
+
+
+.categoriesBlocks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+@media screen and (max-width : 610px) {
+    .categoriesBlocks {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width : 610px) {
+    .categoriesNavItems {
+        display: none;
+    }
+}
+
+.shortScreenButton {
+    height: 100%;
+    width: 90px;
+    background: transparent;
+    border: 0px;
+    color: white;
+    &:hover {
+
+        border: 1px solid black;
+    }
+}
+
+@media screen and (min-width : 610px) {
+    .shortScreenButton {
+        display: none;
+    }
+}
+
+.WEBSCREENNAV {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width : 610px) {
+    .WEBSCREENNAV {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 610px) {
+    .WEBSCREENNAV2 {
+        width: 250px;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width : 610px) {
+    .categoriesWindow {
+        display: none;
+    }
+}
+.categoriesWindow2 {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    justify-content: flex-start;
+}
+
+.AddToCartCompo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width : 610px) {
+    .AddToCartCompo{
+        width: 100%;
+        padding-top: 0px;
+        align-items: center;
+        padding-bottom: 0px;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        background-color: #000;
+        height: 60px;
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width : 610px){
+    .addtocartBtn{
+        width: 50%;
+        border-radius: 0px;
+        height: 100%;
+        color: white;
+        background-color: #5E17EB;
+        border: 1px solid grey;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.profileIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+@media screen and (max-width : 610px){
+    .profileIcon{
+        display: none;
+    }
+}
+
+.CreateProductContainer{
+    background-color:#F2F6FC;
+    margin: 20px;
+    width: 95%;
+}
+
+.Upload_Image_Container{
+  width: 98%;
+  height : 100px;
+  border : 2px dashed black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+.upload_Image{
+    font-size: 40px;
+
+}
+
+.Upload_Image_Container input{
+    opacity: 0;
+    position: absolute;
+    width : 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: #D32F2F;
+    
+}
+
+.remove_btn{
+    height: 30px;
+    width : 30px;
+    border-radius: 30px ;
+    background-color: #5E17EB;
+    border: 0px;
+    margin-left: 5px ;
+    color: white;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #F0F0F0 ;
+        color:#060606;
+        border: 1px solid black;
+
+    }
+}
+
+.OrderDetails{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.OrderItems::-webkit-scrollbar{
+    width: 0.2rem;
+    /* Adjust the width as needed to hide the scrollbar */
+    background-color: transparent;
+}
+
+@media screen and (max-width : 1152px ){
+    .Btn{
+        width : 420px
+    }
+}
+@media screen and (min-width : 1152px ){
+    .Btn{
+        width : 100%;
+    }
+}
+@media screen and (max-width : 419px ){
+    .Btn{
+        width : 95%
+    }
+}
+@media screen and (max-width : 1152px ){
+    #addressSelectOuter{
+        width : 420px
+    }
+}
+@media screen and (max-width : 419px ){
+    #addressSelectOuter{
+        width : 95%
+    }
+}
+@media screen and (min-width : 1152px ){
+    #addressSelectOuter{
+        width : 100%;
+    }
+}
+
+.loginComponent{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(195, 206, 37, 0.8);   
+     right: 2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.8);
+    border-radius: 10px;
+  }
+
+  /* style={{display: 'flex' , flexDirection: 'row', overflow: 'scroll'}} */
+
+  .displayCards{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .displayCards::-webkit-scrollbar {
+    background-color: transparent;
+    display: none;
+}
+
+
+  .textStyle{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    background-color: #000;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .textStyle2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .textStyle3{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .Description{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    color: #686869;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .loginInput{
+    width: 95%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+  }
+  .loginCompo{
+    background-color: rgba(195, 206, 37, 0);
+  }
+  
+  
+
